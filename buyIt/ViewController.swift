@@ -78,6 +78,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     //MARK: - CartViewControllerCellDelegate
     func updateDashboardUI() {
         lblCartCount.text = "\(StockData.sharedInstance.getTotalSoldProductCount())"
+        lblTotalAmount.text = "Total Amount: $ \(StockData.sharedInstance.getTotalAmount())"
         tblProduct.reloadData()
     }
     //MARK: - IBAction
